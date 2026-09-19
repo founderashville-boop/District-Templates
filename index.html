@@ -117,7 +117,14 @@ function useTemplate(i){let t=templates[i];toast(`Opening ${t.name} template...`
 function submitTemplate(e){e.preventDefault();let t={name:fName.value,desc:fDesc.value,cat:fCat.value,channels:+fChannels.value||0,roles:+fRoles.value||0,uses:0,votes:0,creator:"You",verified:false,url:fUrl.value,icon:({Gaming:"🎮",Community:"👥",Roleplay:"🏙️",Development:"🛠️",Creator:"🎥",Support:"🆘",School:"🏫",Music:"🎵"})[fCat.value]||"✨"};templates.unshift(t);localStorage.setItem("sv_templates",JSON.stringify(templates));render();document.getElementById("notice").style.display="block";setTimeout(closeModal,900)}
 function openModal(){document.getElementById("modal").classList.add("open")}
 function closeModal(){document.getElementById("modal").classList.remove("open");document.getElementById("notice").style.display="none"}
-function login(){toast("Discord OAuth can be connected here.")}
+const DISCORD_OAUTH_LOGIN_URL = "PASTE_YOUR_CLOUDFLARE_WORKER_LOGIN_URL_HERE";
+function login(){
+  if(DISCORD_OAUTH_LOGIN_URL.includes("PASTE_YOUR")){
+    toast("Discord Login is not configured yet. Add your OAuth Worker URL.");
+    return;
+  }
+  window.location.href = DISCORD_OAUTH_LOGIN_URL;
+}
 function toast(s){let x=document.getElementById("toast");x.textContent=s;x.style.display="block";setTimeout(()=>x.style.display="none",2200)}
 function fmt(n){return n>=1000000?(n/1000000).toFixed(1)+"M":n>=1000?(n/1000).toFixed(n>=10000?0:1)+"k":n}
 function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
