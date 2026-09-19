@@ -6,7 +6,7 @@
 <title>ServerVault — Discord Server Templates</title>
 <meta name="description" content="Discover, share, and explore Discord server templates.">
 <style>
-:root{--bg:#0b0d12;--panel:#11141b;--panel2:#171b24;--text:#f4f6fb;--muted:#9ba3b5;--line:#252b38;--accent:#5865f2;--accent2:#7c83ff;--green:#35d07f;--danger:#ff5c70;--shadow:0 20px 50px rgba(0,0,0,.25)}
+:root{--bg:#0b0d12;--panel:#11141b;--panel2:#171b24;--text:#f4f6fb;--muted:#9ba3b5;--line:#252b38;--accent:#5865f2;--accent2:#7c83ff;--green:#35d07f;--shadow:0 20px 50px rgba(0,0,0,.25)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% -10%,rgba(88,101,242,.18),transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 button,input,select,textarea{font:inherit}button{cursor:pointer}
 .nav{height:70px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 5%;position:sticky;top:0;background:rgba(11,13,18,.86);backdrop-filter:blur(18px);z-index:20}
@@ -17,8 +17,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .search{max-width:760px;margin:auto;display:flex;background:var(--panel);border:1px solid var(--line);padding:7px;border-radius:15px;box-shadow:var(--shadow)}.search input{flex:1;background:transparent;border:0;outline:0;color:#fff;padding:13px;font-size:16px}.search button{padding:12px 20px}
 .wrap{max-width:1200px;margin:auto;padding:25px 24px 80px}.toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:25px 0}.tabs{display:flex;gap:8px;overflow:auto}.tab{border:1px solid var(--line);background:var(--panel);color:var(--muted);padding:9px 13px;border-radius:999px;white-space:nowrap}.tab.active,.tab:hover{background:#1c2140;color:#fff;border-color:#4049a8}.sort{background:var(--panel);color:#fff;border:1px solid var(--line);padding:10px;border-radius:10px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(180deg,#151922,#11141b);border:1px solid var(--line);border-radius:17px;overflow:hidden;transition:.2s;box-shadow:0 10px 30px rgba(0,0,0,.12)}.card:hover{transform:translateY(-3px);border-color:#3a4260}.cover{height:125px;background:linear-gradient(135deg,#23294a,#171a28);position:relative;padding:18px}.servericon{width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#8b5cf6);display:grid;place-items:center;font-size:25px;border:4px solid #171a28}.verified{position:absolute;right:14px;top:14px;background:#18251f;color:var(--green);font-size:11px;padding:5px 8px;border-radius:999px}.body{padding:18px}.title{font-size:18px;font-weight:800;margin:0 0 8px}.desc{font-size:13px;color:var(--muted);line-height:1.55;min-height:42px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.tag{font-size:11px;background:#1b1f29;color:#cbd1df;padding:5px 8px;border-radius:7px}.stats{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:13px}.creator{margin-top:12px;color:#cbd1df;font-size:12px}.creator span{color:var(--muted)}.cardfoot{display:flex;gap:8px;margin-top:15px}.cardfoot .btn{flex:1;padding:9px}
-.empty{display:none;text-align:center;padding:70px 20px;color:var(--muted)}
-.section-title{font-size:27px;margin:55px 0 18px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:22px;border:1px solid var(--line);border-radius:15px;background:var(--panel)}.feature b{display:block;margin-bottom:7px}.feature p{color:var(--muted);font-size:13px;line-height:1.5;margin:0}
+.empty{display:none;text-align:center;padding:70px 20px;color:var(--muted)}.section-title{font-size:27px;margin:55px 0 18px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:22px;border:1px solid var(--line);border-radius:15px;background:var(--panel)}.feature b{display:block;margin-bottom:7px}.feature p{color:var(--muted);font-size:13px;line-height:1.5;margin:0}
 footer{border-top:1px solid var(--line);padding:35px 5%;display:flex;justify-content:space-between;color:var(--muted);font-size:13px}
 .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);z-index:50;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modalbox{width:min(650px,100%);max-height:90vh;overflow:auto;background:#11141b;border:1px solid var(--line);border-radius:18px;padding:25px}.modalhead{display:flex;justify-content:space-between;align-items:center}.close{background:none;border:0;color:#aaa;font-size:25px}.form{display:grid;gap:13px;margin-top:20px}.form label{font-size:13px;color:#cbd1df}.form input,.form textarea,.form select{width:100%;background:#0c0f14;color:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;outline:none}.form textarea{min-height:100px;resize:vertical}.notice{padding:12px;border-radius:10px;background:#18251f;color:#9ee7bc;font-size:13px;display:none}
 .toast{position:fixed;right:20px;bottom:20px;background:#171b24;border:1px solid var(--line);padding:13px 16px;border-radius:12px;display:none;z-index:100}
@@ -28,107 +27,115 @@ footer{border-top:1px solid var(--line);padding:35px 5%;display:flex;justify-con
 </head>
 <body>
 <header class="nav">
-  <div class="brand"><div class="logo">⚡</div>ServerVault</div>
-  <nav class="navlinks"><a href="#templates">Templates</a><a href="#categories">Categories</a><a href="#how">How it works</a></nav>
-  <div class="actions"><button class="btn" onclick="openModal()">Submit</button><button class="btn primary" onclick="login()">Login</button></div>
+<div class="brand"><div class="logo">⚡</div>ServerVault</div>
+<nav class="navlinks"><a href="#templates">Templates</a><a href="#categories">Categories</a><a href="#how">How it works</a></nav>
+<div class="actions"><button class="btn" onclick="openModal()">Submit</button><button id="loginButton" class="btn primary" onclick="login()">Login with Discord</button></div>
 </header>
 
 <section class="hero">
-  <div class="eyebrow">Discord Server Templates</div>
-  <h1>Skip the blank server.</h1>
-  <p>Discover ready-made Discord server layouts for gaming, roleplay, development, communities, creators and more.</p>
-  <div class="search"><input id="search" placeholder="Search templates..." oninput="render()"><button class="btn primary" onclick="document.getElementById('templates').scrollIntoView()">🔎 Search</button></div>
+<div class="eyebrow">Discord Server Templates</div>
+<h1>Skip the blank server.</h1>
+<p>Discover ready-made Discord server layouts for gaming, roleplay, development, communities, creators and more.</p>
+<div class="search"><input id="search" placeholder="Search templates..." oninput="render()"><button class="btn primary" onclick="document.getElementById('templates').scrollIntoView()">🔎 Search</button></div>
 </section>
 
 <main class="wrap" id="templates">
-  <div class="toolbar">
-    <div class="tabs" id="tabs"></div>
-    <select class="sort" id="sort" onchange="render()"><option value="popular">Most upvoted</option><option value="trending">Trending</option><option value="new">Recently added</option><option value="uses">Most used</option></select>
-  </div>
-  <div class="grid" id="grid"></div>
-  <div class="empty" id="empty"><h2>No templates found</h2><p>Try another search or category.</p></div>
+<div class="toolbar"><div class="tabs" id="tabs"></div><select class="sort" id="sort" onchange="render()"><option value="popular">Most upvoted</option><option value="trending">Trending</option><option value="new">Recently added</option><option value="uses">Most used</option></select></div>
+<div class="grid" id="grid"></div>
+<div class="empty" id="empty"><h2>No templates found</h2><p>Try another search or category.</p></div>
 
-  <h2 class="section-title" id="categories">Browse by category</h2>
-  <div class="features">
-    <div class="feature"><b>🎮 Gaming</b><p>Gaming communities, clans, events and game-specific layouts.</p></div>
-    <div class="feature"><b>🏙️ Roleplay</b><p>Roleplay servers for Roblox, FiveM, GTA and other communities.</p></div>
-    <div class="feature"><b>🛠️ Development</b><p>Organize developers, projects, support and releases.</p></div>
-    <div class="feature"><b>🎥 Creator</b><p>YouTube, Twitch, TikTok and content creator communities.</p></div>
-    <div class="feature"><b>👥 Community</b><p>General-purpose social servers with clean organization.</p></div>
-    <div class="feature"><b>🆘 Support</b><p>Ticket, support and customer-service server structures.</p></div>
-  </div>
+<h2 class="section-title" id="categories">Browse by category</h2>
+<div class="features">
+<div class="feature"><b>🎮 Gaming</b><p>Gaming communities, clans, events and game-specific layouts.</p></div>
+<div class="feature"><b>🏙️ Roleplay</b><p>Roleplay servers for Roblox, FiveM, GTA and other communities.</p></div>
+<div class="feature"><b>🛠️ Development</b><p>Organize developers, projects, support and releases.</p></div>
+<div class="feature"><b>🎥 Creator</b><p>YouTube, Twitch, TikTok and content creator communities.</p></div>
+<div class="feature"><b>👥 Community</b><p>General-purpose social servers with clean organization.</p></div>
+<div class="feature"><b>🆘 Support</b><p>Ticket, support and customer-service server structures.</p></div>
+</div>
 
-  <h2 class="section-title" id="how">How it works</h2>
-  <div class="features">
-    <div class="feature"><b>1. Find a template</b><p>Search the gallery and filter by the type of server you need.</p></div>
-    <div class="feature"><b>2. View the layout</b><p>Check channels, roles, categories and the creator's description.</p></div>
-    <div class="feature"><b>3. Use the template</b><p>Copy or load the structure into your Discord server using your preferred bot or workflow.</p></div>
-  </div>
+<h2 class="section-title" id="how">How it works</h2>
+<div class="features">
+<div class="feature"><b>1. Find a template</b><p>Search the gallery and filter by the type of server you need.</p></div>
+<div class="feature"><b>2. View the layout</b><p>Check channels, roles, categories and the creator's description.</p></div>
+<div class="feature"><b>3. Use the template</b><p>Copy or load the structure into your Discord server using your preferred bot or workflow.</p></div>
+</div>
 </main>
 
 <footer><div>© 2026 ServerVault</div><div>Discord Server Templates • Community Made</div></footer>
 
-<div class="modal" id="modal">
-  <div class="modalbox">
-    <div class="modalhead"><h2>Submit a Template</h2><button class="close" onclick="closeModal()">×</button></div>
-    <p style="color:var(--muted);font-size:13px">Add your Discord template to the community gallery.</p>
-    <div class="notice" id="notice">Template submitted locally. Connect a backend to publish it for everyone.</div>
-    <form class="form" onsubmit="submitTemplate(event)">
-      <label>Template name<input id="fName" required placeholder="Example: Oakwood Roleplay"></label>
-      <label>Description<textarea id="fDesc" required placeholder="Describe your server template..."></textarea></label>
-      <label>Category<select id="fCat"><option>Gaming</option><option>Community</option><option>Roleplay</option><option>Development</option><option>Support</option><option>Creator</option><option>School</option><option>Music</option></select></label>
-      <label>Template URL<input id="fUrl" required placeholder="https://discord.new/..."></label>
-      <label>Channels<input id="fChannels" type="number" min="0" value="20"></label>
-      <label>Roles<input id="fRoles" type="number" min="0" value="15"></label>
-      <button class="btn primary" type="submit">Submit Template</button>
-    </form>
-  </div>
-</div>
+<div class="modal" id="modal"><div class="modalbox">
+<div class="modalhead"><h2>Submit a Template</h2><button class="close" onclick="closeModal()">×</button></div>
+<p style="color:var(--muted);font-size:13px">Add your Discord template to the community gallery.</p>
+<div class="notice" id="notice">Template submitted locally. Connect a backend to publish it for everyone.</div>
+<form class="form" onsubmit="submitTemplate(event)">
+<label>Template name<input id="fName" required placeholder="Example: Oakwood Roleplay"></label>
+<label>Description<textarea id="fDesc" required placeholder="Describe your server template..."></textarea></label>
+<label>Category<select id="fCat"><option>Gaming</option><option>Community</option><option>Roleplay</option><option>Development</option><option>Support</option><option>Creator</option><option>School</option><option>Music</option></select></label>
+<label>Template URL<input id="fUrl" required placeholder="https://discord.new/..."></label>
+<label>Channels<input id="fChannels" type="number" min="0" value="20"></label>
+<label>Roles<input id="fRoles" type="number" min="0" value="15"></label>
+<button class="btn primary" type="submit">Submit Template</button>
+</form>
+</div></div>
 <div class="toast" id="toast"></div>
 
 <script>
 const seed=[
- {name:"Gaming Community",icon:"🎮",desc:"A clean gaming community server with channels, roles and community organization.",cat:"Gaming",channels:42,roles:31,uses:12840,votes:217,creator:"Community Creator",verified:true},
- {name:"Roleplay Community",icon:"🏙️",desc:"A structured roleplay template for departments, support, announcements and players.",cat:"Roleplay",channels:60,roles:78,uses:35120,votes:508,creator:"RP Builder",verified:true},
- {name:"Development Hub",icon:"🛠️",desc:"Organize developers, projects, changelogs, applications, support and collaboration.",cat:"Development",channels:35,roles:29,uses:9240,votes:284,creator:"Dev Studio",verified:true},
- {name:"YouTube Creator",icon:"🎥",desc:"A creator-focused server with community, content notifications and support.",cat:"Creator",channels:36,roles:28,uses:16420,votes:217,creator:"Creator Hub",verified:true},
- {name:"Advanced Support",icon:"🆘",desc:"A complete support layout with ticket categories, staff areas and information channels.",cat:"Support",channels:28,roles:12,uses:14980,votes:395,creator:"Support Team",verified:false},
- {name:"Simple Community",icon:"👥",desc:"Simple and clean server layout designed for almost any community.",cat:"Community",channels:21,roles:21,uses:239000,votes:2400,creator:"Server Builder",verified:false},
- {name:"School Community",icon:"🏫",desc:"Organized school server with information, student channels, staff and support.",cat:"School",channels:38,roles:31,uses:26000,votes:395,creator:"Education Hub",verified:false},
- {name:"Music Community",icon:"🎵",desc:"Music-focused community layout for artists, producers, releases and listeners.",cat:"Music",channels:32,roles:24,uses:7400,votes:182,creator:"Music Network",verified:false},
- {name:"Clan HQ",icon:"⚔️",desc:"Competitive clan structure with recruitment, events, leadership and member channels.",cat:"Gaming",channels:29,roles:19,uses:8800,votes:310,creator:"Clan Builder",verified:false}
+{name:"Gaming Community",icon:"🎮",desc:"A clean gaming community server with channels, roles and community organization.",cat:"Gaming",channels:42,roles:31,uses:12840,votes:217,creator:"Community Creator",verified:true},
+{name:"Roleplay Community",icon:"🏙️",desc:"A structured roleplay template for departments, support, announcements and players.",cat:"Roleplay",channels:60,roles:78,uses:35120,votes:508,creator:"RP Builder",verified:true},
+{name:"Development Hub",icon:"🛠️",desc:"Organize developers, projects, changelogs, applications, support and collaboration.",cat:"Development",channels:35,roles:29,uses:9240,votes:284,creator:"Dev Studio",verified:true},
+{name:"YouTube Creator",icon:"🎥",desc:"A creator-focused server with community, content notifications and support.",cat:"Creator",channels:36,roles:28,uses:16420,votes:217,creator:"Creator Hub",verified:true},
+{name:"Advanced Support",icon:"🆘",desc:"A complete support layout with ticket categories, staff areas and information channels.",cat:"Support",channels:28,roles:12,uses:14980,votes:395,creator:"Support Team",verified:false},
+{name:"Simple Community",icon:"👥",desc:"Simple and clean server layout designed for almost any community.",cat:"Community",channels:21,roles:21,uses:239000,votes:2400,creator:"Server Builder",verified:false},
+{name:"School Community",icon:"🏫",desc:"Organized school server with information, student channels, staff and support.",cat:"School",channels:38,roles:31,uses:26000,votes:395,creator:"Education Hub",verified:false},
+{name:"Music Community",icon:"🎵",desc:"Music-focused community layout for artists, producers, releases and listeners.",cat:"Music",channels:32,roles:24,uses:7400,votes:182,creator:"Music Network",verified:false},
+{name:"Clan HQ",icon:"⚔️",desc:"Competitive clan structure with recruitment, events, leadership and member channels.",cat:"Gaming",channels:29,roles:19,uses:8800,votes:310,creator:"Clan Builder",verified:false}
 ];
+
 let templates=JSON.parse(localStorage.getItem("sv_templates")||"null")||seed;
 let category="All";
 const cats=["All","Gaming","Community","Roleplay","Development","Creator","Support","School","Music"];
+
 function initTabs(){document.getElementById("tabs").innerHTML=cats.map(c=>`<button class="tab ${c===category?'active':''}" onclick="setCat('${c}')">${c}</button>`).join("")}
 function setCat(c){category=c;initTabs();render()}
 function render(){
- const q=document.getElementById("search").value.toLowerCase();
- let arr=templates.filter(t=>(category==="All"||t.cat===category)&&(t.name+" "+t.desc+" "+t.cat).toLowerCase().includes(q));
- const s=document.getElementById("sort").value;
- arr.sort((a,b)=>s==="popular"?b.votes-a.votes:s==="uses"?b.uses-a.uses:s==="trending"?(b.votes+b.uses/100)-(a.votes+a.uses/100):0);
- document.getElementById("grid").innerHTML=arr.map((t,i)=>card(t,i)).join("");
- document.getElementById("empty").style.display=arr.length?"none":"block";
+const q=document.getElementById("search").value.toLowerCase();
+let arr=templates.filter(t=>(category==="All"||t.cat===category)&&(t.name+" "+t.desc+" "+t.cat).toLowerCase().includes(q));
+const s=document.getElementById("sort").value;
+arr.sort((a,b)=>s==="popular"?b.votes-a.votes:s==="uses"?b.uses-a.uses:s==="trending"?(b.votes+b.uses/100)-(a.votes+a.uses/100):0);
+document.getElementById("grid").innerHTML=arr.map((t,i)=>card(t,i)).join("");
+document.getElementById("empty").style.display=arr.length?"none":"block";
 }
 function card(t,i){return `<article class="card"><div class="cover"><div class="servericon">${t.icon}</div>${t.verified?'<div class="verified">✓ Verified</div>':''}</div><div class="body"><h3 class="title">${esc(t.name)}</h3><div class="desc">${esc(t.desc)}</div><div class="meta"><span class="tag">${esc(t.cat)}</span><span class="tag">English</span></div><div class="stats"><span>💬 ${t.channels} channels</span><span>🏷️ ${t.roles} roles</span><span>❤️ ${fmt(t.votes)}</span></div><div class="creator">by <b>${esc(t.creator)}</b> <span>• ${fmt(t.uses)} uses</span></div><div class="cardfoot"><button class="btn" onclick="view(${i})">View Template</button><button class="btn primary" onclick="useTemplate(${i})">Use</button></div></div></article>`}
-function view(i){let t=templates[i];alert(`${t.name}\\n\\n${t.desc}\\n\\n${t.channels} channels • ${t.roles} roles • ${fmt(t.uses)} uses • ${fmt(t.votes)} upvotes`)}
-function useTemplate(i){let t=templates[i];toast(`Opening ${t.name} template...`);setTimeout(()=>alert("Demo mode: connect your Discord template URL/backend here to make this button fully functional."),250)}
+function view(i){let t=templates[i];alert(`${t.name}\n\n${t.desc}\n\n${t.channels} channels • ${t.roles} roles • ${fmt(t.uses)} uses • ${fmt(t.votes)} upvotes`)}
+function useTemplate(i){let t=templates[i];toast(`Opening ${t.name} template...`);if(t.url)setTimeout(()=>window.open(t.url,"_blank","noopener"),250);else setTimeout(()=>alert("This template does not have a Discord template URL yet."),250)}
 function submitTemplate(e){e.preventDefault();let t={name:fName.value,desc:fDesc.value,cat:fCat.value,channels:+fChannels.value||0,roles:+fRoles.value||0,uses:0,votes:0,creator:"You",verified:false,url:fUrl.value,icon:({Gaming:"🎮",Community:"👥",Roleplay:"🏙️",Development:"🛠️",Creator:"🎥",Support:"🆘",School:"🏫",Music:"🎵"})[fCat.value]||"✨"};templates.unshift(t);localStorage.setItem("sv_templates",JSON.stringify(templates));render();document.getElementById("notice").style.display="block";setTimeout(closeModal,900)}
 function openModal(){document.getElementById("modal").classList.add("open")}
 function closeModal(){document.getElementById("modal").classList.remove("open");document.getElementById("notice").style.display="none"}
-const DISCORD_OAUTH_LOGIN_URL = "PASTE_YOUR_CLOUDFLARE_WORKER_LOGIN_URL_HERE";
-function login(){
-  if(DISCORD_OAUTH_LOGIN_URL.includes("PASTE_YOUR")){
-    toast("Discord Login is not configured yet. Add your OAuth Worker URL.");
-    return;
-  }
-  window.location.href = DISCORD_OAUTH_LOGIN_URL;
+
+async function loadDiscordUser(){
+try{
+const r=await fetch("/api/discord/me",{credentials:"include",cache:"no-store"});
+if(!r.ok)return;
+const data=await r.json();
+if(data && data.loggedIn && data.user){
+const b=document.getElementById("loginButton");
+b.textContent=(data.user.global_name||data.user.username||"Discord User")+" • Logout";
+b.onclick=logout;
 }
+}catch(e){console.warn("Discord session check failed",e)}
+}
+
+function login(){window.location.href="/api/discord/login"}
+function logout(){window.location.href="/api/discord/logout"}
 function toast(s){let x=document.getElementById("toast");x.textContent=s;x.style.display="block";setTimeout(()=>x.style.display="none",2200)}
 function fmt(n){return n>=1000000?(n/1000000).toFixed(1)+"M":n>=1000?(n/1000).toFixed(n>=10000?0:1)+"k":n}
 function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
-initTabs();render();
+
+initTabs();
+render();
+loadDiscordUser();
 </script>
 </body>
 </html>
