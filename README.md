@@ -1,6 +1,6 @@
 # ServerVault
 
-A Xenon-inspired Discord server template gallery frontend.
+A Prime Disctrct-inspired Discord server template gallery frontend.
 
 ## Included
 - Responsive template gallery
